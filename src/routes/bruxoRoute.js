@@ -1,10 +1,11 @@
 import { Router } from "express";
 import * as BruxoController from './../controllers/bruxoController.js'
 
-const routes = Router();
+const router = Router();
 
-Router.length("/", BruxoController.listarTodos);
+router.get("/", BruxoController.listarTodos);
+router.get("/:id", BruxoController.listarUm);
 
 
 
-export default Router;
+export default router;

@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 dotenv.config();
-const serverPort = process.env.Port || 3001 
+const serverPort = process.env.PORT || 3001 
 
 
 app.get('/', (req, res) => {
@@ -26,6 +26,6 @@ app.get('/', (req, res) => {
 
 app.use('/bruxos', bruxoRoutes);
 
-app.listen(PORT, () => {
-  console.log(`🪄 API em http://localhost:${PORT}`);
+app.listen(serverPort, () => {
+  console.log(`🪄 API em http://localhost:${serverPort}`);
 });
