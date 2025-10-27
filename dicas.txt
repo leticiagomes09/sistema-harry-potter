@@ -1,0 +1,5 @@
+1- Instale as dependencias -> npm install
+2- Crie o arquivo .env (se nao existir) -> adicione a variavel do banco
+3- Crie o banco e aplique o schema -> npx prisma migrate dev
+4- veja o banco -> npx prisma studio
+5- execute o projeto -> npm run dev 
